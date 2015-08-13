@@ -11,54 +11,217 @@ description: Learn more about the upstream projects that JBoss is involved with.
       h2.blowout#upstream-projects Community
 
 .row.content
-  .large-6.column
-    form.project-filters(method="GET" action="")
-      h4
-        | Filters
-        a.project-filters-clear(href="#") Clear All Filters
-      input(type="text" placeholder="Filter by keyword" name="filter-text")
+  .large-12.columns
+    h4 Tagline about upstream communities and Red Hat.
+    p
+      | Description of communities.  Nulla in tempor mauris, id posuere arcu. Nullam hendrerit enim et dui iaculis, non mattis turpis sagittis. Sed sit amet risus eros. Integer gravida ipsum non risus ultrices suscipit. Duis consequat tincidunt lacus, ut auctor enim vehicula iaculis.
+      br>/
+      | Suspendisse vestibulum dignissim quam. Integer vel augue. Phasellus nulla purus, interdum ac, venenatis non, varius rutrum, leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis a eros. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Fusce magna mi, porttitor quis, convallis eget, sodales ac, urna. Phasellus luctus venenatis magna. Vivamus eget lacus. Nunc tincidunt convallis tortor. Duis eros mi, dictum vel, fringilla sit amet, fermentum id, sem. Phasellus nunc enim, faucibus ut, laoreet in, consequat id, metus. Vivamus dignissim. Cras lobortis tempor velit. Phasellus nec diam ac nisl lacinia tristique. Nullam nec metus id mi dictum dignissim.
 
-      .filter-block
-        h5 Included In
-        .styled-select
-          select(name="filter-products")
-            option(value="") Select Product...
-            option(value="eap") JBoss Enterprise Application Platform
-            option(value="webserver") JBoss Web Server
-            option(value="datagrid") JBoss Data Grid
-            option(value="portal") JBoss Portal
-            option(value="fsw") JBoss Fuse Service Works
-            option(value="datavirt") JBoss Data Virtualization
-            option(value="fuse") JBoss Fuse
-            option(value="amq") JBoss A-MQ
-            option(value="brms") JBoss BRMS
-            option(value="bpmsuite") JBoss BPM Suite
-            option(value="devstudio") JBoss Developer Studio
+  .large-12.columns
+    ul.small-block-grid-1.medium-block-grid-2.large-block-grid-3
+      li
+        a(href="#")
+          img alt=("Fedora Linux") onerror="app.project.fallbackImage(this)" src=cdn("#{site.base_url}/images/community/fedora_500x400.png") /
+          .image-link.center  Project Name
+      li
+        a(href="#")
+          img alt=("Fedora Linux") onerror="app.project.fallbackImage(this)" src=cdn("#{site.base_url}/images/community/fedora_500x400.png") /
+          .image-link.center  Project Name
+      li
+        a(href="#")
+          img alt=("Fedora Linux") onerror="app.project.fallbackImage(this)" src=cdn("#{site.base_url}/images/community/fedora_500x400.png") /
+          .image-link.center  Project Name
+      li
+        a(href="#")
+          img alt=("Fedora Linux") onerror="app.project.fallbackImage(this)" src=cdn("#{site.base_url}/images/community/fedora_500x400.png") /
+          .image-link.center  Project Name
+      li
+        a(href="#")
+          img alt=("Fedora Linux") onerror="app.project.fallbackImage(this)" src=cdn("#{site.base_url}/images/community/fedora_500x400.png") /
+          .image-link.center  Project Name
+      li
+        a(href="#")
+          img alt=("Fedora Linux") onerror="app.project.fallbackImage(this)" src=cdn("#{site.base_url}/images/community/fedora_500x400.png") /
+          .image-link.center  Project Name
+  
+  .large-24.columns
+    #tabs-projects
+      ul.tabs(data-tab)
+        li.tab-title.active
+          a(href='#temp1') By Category
+        li.tab-title
+          a(href='#temp2') By Product 
+        li.tab-title
+          a(href='#temp3') A - Z 
+    .tabs-content#project-tabs
+      div.content.active#temp1
+        section
+          h5 Products Category Name
+          ul.small-block-grid-1.medium-block-grid-3
+            li
+              a(href="#") Product Name
+            li
+              a(href="#") Product Name
+            li
+              a(href="#") Product Name
+            li
+              a(href="#") Product Name
+            li
+              a(href="#") Product Name
+            li
+              a(href="#") Product Name
+        section
+          h5 Products Category Name
+          ul.small-block-grid-1.medium-block-grid-3
+            li
+              a(href="#") Product Name
+            li
+              a(href="#") Product Name
+            li
+              a(href="#") Product Name
+            li
+              a(href="#") Product Name
+            li
+              a(href="#") Product Name
+      div.content#temp2
+        section
+          h5 Red Hat Product Name
+          ul.small-block-grid-1.medium-block-grid-3
+            li
+              a(href="#") Product Name
+            li
+              a(href="#") Product Name
+            li
+              a(href="#") Product Name
+            li
+              a(href="#") Product Name
+        section
+          h5 Red Hat Product Name
+          ul.small-block-grid-1.medium-block-grid-3
+            li
+              a(href="#") Product Name
+            li
+              a(href="#") Product Name
+            li
+              a(href="#") Product Name
+            li
+              a(href="#") Product Name
+      div.content#temp3(data-spy="scroll" data-target="#alpha-scroll")
+        row#alpha-nav
+          ul.center(role="tablist")
+            li
+              a href="#a" A
+            li
+              a href="#b" B
+            li
+              a href="#c" C
+            li
+              a href="#d" D
+        row#alpha-content
+          section#a
+            h5 A
+            ul.small-block-grid-1.medium-block-grid-3
+              li
+                a(href="#") Product Name
+              li
+                a(href="#") Product Name
+              li
+                a(href="#") Product Name
+              li
+                a(href="#") Product Name
+            a href="#alpha-nav"
+              i.fa.fa-long-arrow-up.right
+          section#b
+            h5 B
+            ul.small-block-grid-1.medium-block-grid-3
+              li
+                a(href="#") Product Name
+              li
+                a(href="#") Product Name
+              li
+                a(href="#") Product Name
+              li
+                a(href="#") Product Name
+            a href="#alpha-nav"
+              i.fa.fa-long-arrow-up.right
+          section#c
+            h5 C
+            ul.small-block-grid-1.medium-block-grid-3
+              li
+                a(href="#") Product Name
+              li
+                a(href="#") Product Name
+              li
+                a(href="#") Product Name
+              li
+                a(href="#") Product Name
+            a href="#alpha-nav"
+              i.fa.fa-long-arrow-up.right
+          section#d
+            h5 D
+            ul.small-block-grid-1.medium-block-grid-3
+              li
+                a(href="#") Product Name
+              li
+                a(href="#") Product Name
+              li
+                a(href="#") Product Name
+              li
+                a(href="#") Product Name
+            a href="#alpha-nav"
+              i.fa.fa-long-arrow-up.right
 
-  .large-18.column
-    .featured-projects
-      // span.featured-project-ids(hidden) #{site.featured_projects}
-      ul.featured-projects-results
-        li
-          .defaultprojectimage
-            a.image-link href="https://getfedora.org"
-              img alt=("Fedora Linux") onerror="app.project.fallbackImage(this)" src=cdn("#{site.base_url}/images/community/fedora_500x400.png") /
-          h5.solution-name
-            a.solution-name-link href="https://getfedora.org"  Fedora Linux
-        li
-          .defaultprojectimage
-            a.image-link href="http://www.wildfly.org"
-              img alt=("WildFly Application Server") onerror="app.project.fallbackImage(this)" src=cdn("#{site.base_url}/images/community/wildfly_500x400.png") /
-          h5.solution-name
-            a.solution-name-link href="http://www.wildfly.org"  WildFly Application Server
-        li
-          .defaultprojectimage
-            a.image-link href="http://commons.openshift.org"
-              img alt=("OpenShift Commons") onerror="app.project.fallbackImage(this)" src=cdn("#{site.base_url}/images/community/openshiftcommons_500x400.png") /
-          h5.solution-name
-            a.solution-name-link href="http://commons.openshift.org"  OpenShift Commons
+// OLD CODE TO DISPLAY PROJECTS
+/ .row.content
+/   .large-6.column
+/     form.project-filters(method="GET" action="")
+/       h4
+/         | Filters
+/         a.project-filters-clear(href="#") Clear All Filters
+/       input(type="text" placeholder="Filter by keyword" name="filter-text")
 
-    h2.divider
-      //span.label#results-label
-    ul.small-block-grid-2.large-block-grid-4.medium-block-grid-3.results
+/       .filter-block
+/         h5 Included In
+/         .styled-select
+/           select(name="filter-products")
+/             option(value="") Select Product...
+/             option(value="eap") JBoss Enterprise Application Platform
+/             option(value="webserver") JBoss Web Server
+/             option(value="datagrid") JBoss Data Grid
+/             option(value="portal") JBoss Portal
+/             option(value="fsw") JBoss Fuse Service Works
+/             option(value="datavirt") JBoss Data Virtualization
+/             option(value="fuse") JBoss Fuse
+/             option(value="amq") JBoss A-MQ
+/             option(value="brms") JBoss BRMS
+/             option(value="bpmsuite") JBoss BPM Suite
+/             option(value="devstudio") JBoss Developer Studio
+
+/   .large-18.column
+/     .featured-projects
+/       // span.featured-project-ids(hidden) #{site.featured_projects}
+/       ul.featured-projects-results
+/         li
+/           .defaultprojectimage
+/             a.image-link href="https://getfedora.org"
+/               img alt=("Fedora Linux") onerror="app.project.fallbackImage(this)" src=cdn("#{site.base_url}/images/community/fedora_500x400.png") /
+/           h5.solution-name
+/             a.solution-name-link href="https://getfedora.org"  Fedora Linux
+/         li
+/           .defaultprojectimage
+/             a.image-link href="http://www.wildfly.org"
+/               img alt=("WildFly Application Server") onerror="app.project.fallbackImage(this)" src=cdn("#{site.base_url}/images/community/wildfly_500x400.png") /
+/           h5.solution-name
+/             a.solution-name-link href="http://www.wildfly.org"  WildFly Application Server
+/         li
+/           .defaultprojectimage
+/             a.image-link href="http://commons.openshift.org"
+/               img alt=("OpenShift Commons") onerror="app.project.fallbackImage(this)" src=cdn("#{site.base_url}/images/community/openshiftcommons_500x400.png") /
+/           h5.solution-name
+/             a.solution-name-link href="http://commons.openshift.org"  OpenShift Commons
+
+/     h2.divider
+/       //span.label#results-label
+/     ul.small-block-grid-2.large-block-grid-4.medium-block-grid-3.results
 
