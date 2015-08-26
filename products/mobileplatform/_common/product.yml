@@ -1,0 +1,14 @@
+name: Red Hat Mobile Application Platform
+abbreviated_name: Mobile Application Platform
+current_version: 1.0.0.GA
+intro_youtube: https://www.youtube.com/v=Dw-Z-R2C51U
+skip_installation_instructions: true
+skip_maven_instructions: true
+skip_quickstart_link: true
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum odio a sollicitudin tincidunt. Mauris condimentum turpis vitae ex tincidunt, vel mattis lorem facilisis.
+index:
+  desc: |
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum odio a sollicitudin tincidunt. Mauris condimentum turpis vitae ex tincidunt, vel mattis lorem facilisis.
+guides:
+downloads:
+other_product: true

@@ -20,9 +20,9 @@ h2#overview Overview
         asciidoc:
           - Discuss on the link:#{page.product.forum.url}[#{page.product.abbreviated_name} Forums]
       - unless page.product.skip_quickstart_link
-        asciidoc:        
+        asciidoc:
           - Get started with one of our many link:../learn?quickstarts[quickstarts].
-      asciidoc:  
+      asciidoc:
         - View the link:#{page.product.documentation_url}[#{page.product.abbreviated_name} Documentation]
 
       a.moreinfolink(href="../docs-and-apis/")
@@ -31,9 +31,12 @@ h2#overview Overview
 
   .large-11.columns.product-video
     = video_player(video(page.product.intro_video)) if page.product.intro_video
+    - if page.product.intro_youtube
+      = video_player(site.videos["#{page.product.intro_youtube}"])
 
 br
 .row#product-features
+  = page._feature_title
   .large-8.columns
     div(class="feature-icon")
       = page._icon1
@@ -49,6 +52,11 @@ br
       = page._icon3
     div(class="feature-text")
       = page._features3
+
+- if page._special_table
+.row#table-features
+  .large-24.columns
+    = page._special_table
 
 .row
   .large-24.columns

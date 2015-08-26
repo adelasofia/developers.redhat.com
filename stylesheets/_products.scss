@@ -62,6 +62,31 @@
   }
 }
 
+#additional-features{
+  margin: 1em 0;
+  .feature-icon {
+    text-align: center;
+    p {
+      color: $grey-5;
+      margin-bottom: 0;
+    }
+    img {
+      max-width: 160px;
+    }
+  }
+
+  .feature-text {
+    text-align: center;
+    h4{
+      font-size: 1.2rem;
+    }
+    .paragraph{
+      text-align: left;
+    }
+  }
+}
+
+
 .hero-placeholder{
   height: 300px;
   background-color: $grey-2;
