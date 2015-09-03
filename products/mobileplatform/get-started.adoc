@@ -18,29 +18,29 @@ Sign up for OpenShift account.  It’s easy – email, password and verify you a
 [.content-img]
 image:#{cdn(site.base_url + '/images/products/mobileplatform/mobileplatform_install_01.png')}[Create a domain]
 3. Insert domain of your choice and click _create._
-4. Click _Projects_
+4. Click _Projects_.
 +
 [.content-img]
 image:#{cdn(site.base_url + '/images/products/mobileplatform/mobileplatform_install_02.png')}[Projects screen]
-5. Click _New Project_
-6. In 1) Choose a Template screen, choose Hello World Project by clicking _choose._
-7. Name your project, we choose Hello World, and click _Create_
+5. Click _New Project_.
+6. In Choose a Template screen, choose Hello World Project by clicking _choose._
+7. Name your project, we choose Hello World, and click _Create_.
 8. Once progress bar turns green click _Finish._
 9. In Apps, Cloud Apps and Services screen, click _Cloud App_ box.
-10. In left navigation click _Deploy_ +
-*Note:* The top right “development” box is red, indicated app is not running. 
-11. Click _Deploy Cloud App_ +
+10. In left navigation click _Deploy_. +
+*Note:* The top right “development” box is red, indicating app is not running. 
+11. Click _Deploy Cloud App_. +
 *Note:* This can take ~5-7 minutes the first time.  After initial set-up it will complete much faster.
-12. You can continue on or wait for the deployment to turn green.  Click Apps, Cloud Apps and Services in navigation to take you back to your project. +
+12. You can continue on or wait for the deployment to turn green.  Click _Apps, Cloud Apps and Services_ in navigation to take you back to your project. +
 +
 [.content-img]
 image:#{cdn(site.base_url + '/images/products/mobileplatform/mobileplatform_install_03.png')}[Click Apps, Cloud Apps and Services]
-13.  Click _Cordova Light App_
+13.  Click _Cordova Light App_.
 14. You can select your mobile device or go straight to typing within the mobile device shown.  Enter your name and click _Say Hello From the Cloud_.  You should see Hello [your name] appear.
 +
 [.content-img]
 image:#{cdn(site.base_url + '/images/products/mobileplatform/mobileplatform_install_04.png')}[App details]
 15. Once above is completed address the Client side.  In the left navigation, click _Build._
-16. Click _Android_
-17. Click _Build_
+16. Click _Android_.
+17. Click _Build_.
 18. If you have an Android phone you can scan the QR code to install directly onto your device.  
