@@ -1,0 +1,49 @@
+---
+layout: product
+status: green
+type: Get Started
+---
+- page.description = "Learn how to install and start using #{page.product.abbreviated_name}."
+= partial 'getstarted-thankyou.html.slim', {'parent' => page}
+
+.large-24#get-started 
+  h2 Get Started with #{page.product.name}
+
+.large-24
+  h3 First, choose a development technology:
+.large-24
+  ul.product-langs.small-block-grid-2.large-block-grid-5
+    li
+      a(href="#")
+        .product-lang
+          img.lang-logo(src=cdn("#{site.base_url}/images/products/logo_placeholder.png") alt="Logo Placeholder")
+          h4.prod-lang-name Pearl
+    li
+      a(href="#")
+        .product-lang
+          img.lang-logo(src=cdn("#{site.base_url}/images/products/logo_placeholder.png") alt="Logo Placeholder")
+          h4.prod-lang-name PHP
+    li
+      a(href="#")
+        .product-lang
+          img.lang-logo(src=cdn("#{site.base_url}/images/products/logo_placeholder.png") alt="Logo Placeholder")
+          h4.prod-lang-name Python
+    li
+      a(href="#")
+        .product-lang
+          img.lang-logo(src=cdn("#{site.base_url}/images/products/logo_placeholder.png") alt="Logo Placeholder")
+          h4.prod-lang-name Ruby
+    li
+      a(href="#")
+        .product-lang
+          img.lang-logo(src=cdn("#{site.base_url}/images/products/logo_placeholder.png") alt="Logo Placeholder")
+          h4.prod-lang-name Node.js
+
+
+
+
+= javascripts('product-get-started', true) do
+  script src="#{site.base_url}/javascripts/vendor/class.create.js"
+  script src="#{site.base_url}/javascripts/vendor/jquery-encoder-0.1.0.js"
+  script src="#{site.base_url}/javascripts/vendor/jquery.filedownload.js"      
+

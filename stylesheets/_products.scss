@@ -361,3 +361,72 @@
     }
   }
 }
+
+ul.product-langs {
+  margin-top: 50px !important;
+  
+  li {
+    list-style: none;
+    &:before {
+      display: none;
+    }
+    img {
+      max-width: 125px;
+      display: block;
+      margin: 0 auto;
+    }
+    .prod-lang-name {
+      text-align: center;
+      color: $red;
+      font-weight: 100;
+    }
+  }
+}
+
+.sp-header {
+  margin-top: 25px;
+  p {
+    font-size: rem-calc(18);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
