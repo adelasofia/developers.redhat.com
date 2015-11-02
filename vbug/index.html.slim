@@ -1,0 +1,57 @@
+---
+layout: base
+body_class: fullbleed
+primary_nav_hidden: true
+interpolate: true
+---
+
+/ .wide.wide-hero(class="#{page.hero_class}")==hero
+
+#vBug-microsite
+  section
+    - page.vbug.next_event.each do |a|
+      .row
+        .large-24.columns
+          h5.caps Next vJBUG
+        .large-12.small-24.columns
+          h2.caps #{a.title}
+        .large-12.small-24.columns.vbug-date
+          .large-6.small-3.columns
+            i.fa.fa-calendar.fa-2x.right
+          .large-18.small-21.columns
+            h6 #{a.date}
+            h6 #{a.time}
+      .row
+        .large-15.columns.event-video
+          = video_player(site.videos["#{a.video}"])
+        .large-9.columns.chat
+          iframe.chat-embed(src="http://webchat.freenode.net/?channels=vjbug")
+  section.inverse
+    - page.vbug.upcomming_event.each do |b|
+      .row
+        .large-24.columns
+          h5.caps Upcomming Event
+          br
+          h4.caps #{b.title}
+          h6 Speaker: #{b.speaker}
+          p 
+            | #{b.date}
+            br
+            | #{b.time}
+          p #{b.abstract}
+          p #{b.speaker_intro}
+  section
+      .row
+        .large-24.columns
+          h5.caps Past Events
+          ul.past-events
+           - page.vbug.past_events.each do |c|
+            li
+              h4.caps #{c.title}
+              h6 Speaker: #{c.speaker}
+              p 
+                | #{c.date}
+                br
+                | #{c.time}
+              p #{c.abstract}
+              p #{c.speaker_intro}

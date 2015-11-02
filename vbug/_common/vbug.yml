@@ -1,0 +1,31 @@
+next_event:
+  - title: Messaging for IoT
+    date: Tuesday, November 10, 2015
+    time: 6PM GMT
+    video: https://www.youtube.com/v=E68L26GmQNs
+    abstract: Scale changes everything. What once was quite adequate for enterprise messaging can't scale to support "Internet of Things". We need new protocols, patterns and architectures to support this new world. This session will start with basic introduction to the concept of Internet of Things. Next it will discuss general technical challenges involved with the concept and explain why it is becoming mainstream now. Now we&rsquo;re ready to start talking about solutions. We will introduce some messaging patterns (like telemetry and command/control) and protocols (such as MQTT and AMQP) used in these scenarios. Finally we will see how Apache ActiveMQ is gearing up for this race. We will show tips for horizontal and vertical scaling of the broker, related projects that can help with deployments and what the future development road map looks like. 
+    speaker: Martyn Taylor
+    speaker_intro: Martyn Taylor is a senior software engineer at Red Hat, with over 7 years&rsquo; experience working on cloud, middleware and messaging software. Martyn currently works on the Apache ActiveMQ suite of projects.
+upcomming_event:
+  - title: Messaging for IoT
+    date: Tuesday, November 10, 2015
+    time: 6PM GMT
+    video: https://www.youtube.com/v=E68L26GmQNs
+    abstract: Scale changes everything. What once was quite adequate for enterprise messaging can't scale to support "Internet of Things". We need new protocols, patterns and architectures to support this new world. This session will start with basic introduction to the concept of Internet of Things. Next it will discuss general technical challenges involved with the concept and explain why it is becoming mainstream now. Now we&rsquo;re ready to start talking about solutions. We will introduce some messaging patterns (like telemetry and command/control) and protocols (such as MQTT and AMQP) used in these scenarios. Finally we will see how Apache ActiveMQ is gearing up for this race. We will show tips for horizontal and vertical scaling of the broker, related projects that can help with deployments and what the future development road map looks like. 
+    speaker: Martyn Taylor
+    speaker_intro: Martyn Taylor is a senior software engineer at Red Hat, with over 7 years&rsquo; experience working on cloud, middleware and messaging software. Martyn currently works on the Apache ActiveMQ suite of projects.
+past_events:
+  - title: Messaging for IoT
+    date: Tuesday, November 10, 2015
+    time: 6PM GMT
+    video: https://www.youtube.com/v=E68L26GmQNs
+    abstract: Scale changes everything. What once was quite adequate for enterprise messaging can't scale to support "Internet of Things". We need new protocols, patterns and architectures to support this new world. This session will start with basic introduction to the concept of Internet of Things. Next it will discuss general technical challenges involved with the concept and explain why it is becoming mainstream now. Now we&rsquo;re ready to start talking about solutions. We will introduce some messaging patterns (like telemetry and command/control) and protocols (such as MQTT and AMQP) used in these scenarios. Finally we will see how Apache ActiveMQ is gearing up for this race. We will show tips for horizontal and vertical scaling of the broker, related projects that can help with deployments and what the future development road map looks like. 
+    speaker_intro: Martyn Taylor
+    speaker_intro: Martyn Taylor is a senior software engineer at Red Hat, with over 7 years&rsquo; experience working on cloud, middleware and messaging software. Martyn currently works on the Apache ActiveMQ suite of projects.
+  - title: Messaging for IoT
+    date: Tuesday, November 10, 2015
+    time: 6PM GMT
+    video: https://www.youtube.com/v=E68L26GmQNs
+    abstract: Scale changes everything. What once was quite adequate for enterprise messaging can't scale to support "Internet of Things". We need new protocols, patterns and architectures to support this new world. This session will start with basic introduction to the concept of Internet of Things. Next it will discuss general technical challenges involved with the concept and explain why it is becoming mainstream now. Now we&rsquo;re ready to start talking about solutions. We will introduce some messaging patterns (like telemetry and command/control) and protocols (such as MQTT and AMQP) used in these scenarios. Finally we will see how Apache ActiveMQ is gearing up for this race. We will show tips for horizontal and vertical scaling of the broker, related projects that can help with deployments and what the future development road map looks like. 
+    speaker: Martyn Taylor
+    speaker_intro: Martyn Taylor is a senior software engineer at Red Hat, with over 7 years&rsquo; experience working on cloud, middleware and messaging software. Martyn currently works on the Apache ActiveMQ suite of projects.
