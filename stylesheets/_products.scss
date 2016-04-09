@@ -508,7 +508,7 @@
       margin-left: 1em;
     }
   }
-  .content-img img {
+  .get-started-content img {
     margin-top: 15px;
     margin-bottom: 20px;
     max-width: 540px;
@@ -754,11 +754,11 @@ ul.product-langs {
 }
 
 #get-started-instructions.rhel-custom {
-  img {
-    margin-top: 15px;
-    margin-bottom: 20px;
-    max-width: 540px;
-  }
+  // .get-started-content img {
+  //   margin-top: 15px;
+  //   margin-bottom: 20px;
+  //   max-width: 540px;
+  // }
   .card {
     padding: 22px 15px;
     min-height: 166px;
@@ -832,11 +832,13 @@ ul.product-langs {
     }
   }
 }
+@include tablet-landscape-and-down {
+  .get-started-content img{
+    width: 100%;
+  }
+}
 @include mobile-landscape-and-down {
   #get-started-instructions {
-    .content-img img {
-      max-width: 100%;
-    }
     ul li p, ol li p {
       word-wrap: break-word;
     }
