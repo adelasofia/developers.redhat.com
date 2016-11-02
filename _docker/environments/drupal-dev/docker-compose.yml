@@ -59,7 +59,7 @@ services:
     ports:
       - "3306"
     volumes:
-      - ../../drupal/prod_db.sql.gz:/docker-entrypoint-initdb.d/prod_db.sql.gz
+      - ./prod_db.sql.gz:/docker-entrypoint-initdb.d/prod_db.sql.gz
 
   apache:
    image: httpd:2.4.20
@@ -87,8 +87,6 @@ services:
      - ../../../:/home/jenkins_developer/developer.redhat.com
      - export:/export
     entrypoint: "ruby _docker/lib/export/export.rb docker"
-    environment:
-     - drupal.export.fail_on_missing
 
   #
   # Testing
