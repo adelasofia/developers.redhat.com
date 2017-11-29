@@ -1,5 +1,5 @@
 import {BasePage} from './Base.page';
-import {driver} from "../../config/DriverHelper"
+import {driver} from "../../config/DriverHelper";
 import {SearchBox} from "./components/search/SearchBox";
 import {SearchFilter} from "./components/search/SearchFilter";
 import {SearchOneBox} from "./components/search/SearchOneBox";
