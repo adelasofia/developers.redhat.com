@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "node index.js",
-    "watch": "chimp config/chimp-local.js --watch",
+    "watch": "RHD_BASE_URL=http://localhost:8888 chimp config/chimp-local.js --watch",
     "watch:docker": "chimp config/chimp-local-docker.js --watch"
   },
   "keywords": [
