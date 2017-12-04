@@ -38,9 +38,25 @@
  * @ingroup themeable
  */
 #}
+{% set classes = [
+'field',
+'field--name-' ~ field_name|clean_class,
+'field--type-' ~ field_type|clean_class,
+'field--label-' ~ label_display,
+] %}
+{% set title_classes = [
+'field__label',
+label_display == 'visually_hidden' ? 'visually-hidden',
+] %}
 
-{% set values = items[0]["content"]["#context"]["value"]|split(',')|json_encode|replace('\"','\'')%}
-
-<div id="topic-resources" class="row" data-tags="eap">
-    <ul class="topic-resources topic-resources-list small-block-grid-1 medium-block-grid-2 large-block-grid-4"></ul>
+<div{{ attributes.addClass(classes, 'field__items') }}>
+  {% for item in items %}
+    <div{{ attributes.addClass(['field__item', 'large-6 columns', 'related-product-card', 'tertiary-promo']) }}>
+        <h6>Related Video</h6>
+        <h4> {{item.content}} </h4>
+        <p class="description">
+         <a href="">Watch Now &#x25B8;</a>
+       </p>
+    </div>
+  {% endfor %}
 </div>

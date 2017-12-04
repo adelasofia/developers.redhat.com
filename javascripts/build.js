@@ -503,6 +503,127 @@ var RHDPTryItNow = (function (_super) {
 window.addEventListener('WebComponentsReady', function () {
     customElements.define('rhdp-tryitnow', RHDPTryItNow);
 });
+var RHDPVideoRelatedContent = (function (_super) {
+    __extends(RHDPVideoRelatedContent, _super);
+    function RHDPVideoRelatedContent() {
+        var _this = _super.call(this) || this;
+        _this._url = ['', ''];
+        _this.template = function (strings, url, title, kind) {
+            return "<div>\n            <h4>" + (url ? "<a href=\"" + url + "\">" + title + "</a>" : title) + "</h4>\n            <p>\n                <span class=\"caps\">" + kind + "</span>\n            </p>\n        </div>";
+        };
+        return _this;
+    }
+    Object.defineProperty(RHDPVideoRelatedContent.prototype, "url", {
+        get: function () {
+            return this._url;
+        },
+        set: function (val) {
+            if (this._url === val)
+                return;
+            this._url = val;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(RHDPVideoRelatedContent.prototype, "title", {
+        get: function () {
+            return this._title;
+        },
+        set: function (val) {
+            if (this._title === val)
+                return;
+            this._title = val;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(RHDPVideoRelatedContent.prototype, "kind", {
+        get: function () {
+            return this._kind;
+        },
+        set: function (val) {
+            if (this._kind === val)
+                return;
+            this._kind = val;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(RHDPVideoRelatedContent.prototype, "result", {
+        get: function () {
+            return this._result;
+        },
+        set: function (val) {
+            if (this._result === val)
+                return;
+            this._result = val;
+            this.computeTitle(val);
+            this.computeKind(val);
+            this.computeURL(val);
+            this.renderResult();
+        },
+        enumerable: true,
+        configurable: true
+    });
+    RHDPVideoRelatedContent.prototype.connectedCallback = function () {
+    };
+    Object.defineProperty(RHDPVideoRelatedContent, "observedAttributes", {
+        get: function () {
+            return ['result'];
+        },
+        enumerable: true,
+        configurable: true
+    });
+    RHDPVideoRelatedContent.prototype.attributeChangedCallback = function (name, oldVal, newVal) {
+        this[name] = newVal;
+    };
+    RHDPVideoRelatedContent.prototype.renderResult = function () {
+        this.innerHTML = (_a = ["", "", "", ""], _a.raw = ["", "", "", ""], this.template(_a, this.url, this.title, this.kind));
+        var _a;
+    };
+    RHDPVideoRelatedContent.prototype.computeTitle = function (result) {
+        var title = '';
+        if (result.highlight && result.highlight.sys_title) {
+            title = result.highlight.sys_title[0];
+        }
+        else {
+            title = result.fields.sys_title[0];
+        }
+        this.title = title;
+    };
+    RHDPVideoRelatedContent.prototype.computeKind = function (result) {
+        var kind = result.fields.sys_type || "webpage", map = {
+            jbossdeveloper_archetype: 'Archetype',
+            article: 'Article',
+            blogpost: 'Blog Post',
+            jbossdeveloper_bom: 'Bom',
+            book: 'Book',
+            cheatsheet: 'Cheat Sheet',
+            demo: 'Demo',
+            event: 'Event',
+            forumthread: 'Forum Thread',
+            jbossdeveloper_example: 'Demo',
+            quickstart: 'Quickstart',
+            quickstart_early_access: 'Demo',
+            solution: 'Article',
+            stackoverflow_thread: 'Stack Overflow',
+            video: 'Video',
+            webpage: 'Web Page',
+            website: 'Web Page'
+        };
+        this.kind = map[kind] || 'Web Page';
+    };
+    RHDPVideoRelatedContent.prototype.computeURL = function (result) {
+        var url = ['', ''];
+        if (result.fields && result.fields.sys_url_view) {
+            url[0] = "<a href=\"" + result.fields.sys_url_view + "\">";
+            url[1] = '</a>';
+        }
+        this.url = (result.fields && result.fields.sys_url_view) ? result.fields.sys_url_view : '';
+    };
+    return RHDPVideoRelatedContent;
+}(HTMLElement));
+customElements.define('rhdp-video-related-content', RHDPVideoRelatedContent);
 var DevNationLiveSession = (function () {
     function DevNationLiveSession(obj) {
         var _this = this;

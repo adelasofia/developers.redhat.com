@@ -39,8 +39,10 @@
  */
 #}
 
-{% set values = items[0]["content"]["#context"]["value"]|split(',')|json_encode|replace('\"','\'')%}
+{# {% if content.field_video_resource_tags|render|striptags|trim is not empty %} #}
+  {% set values = items[0]["content"]["#context"]["value"]|split(',')|json_encode|replace('\"','\'')%}
 
-<div id="topic-resources" class="row" data-tags="eap">
-    <ul class="topic-resources topic-resources-list small-block-grid-1 medium-block-grid-2 large-block-grid-4"></ul>
-</div>
+  <div id="video-related-cont" data-tags="{{values}}">
+      <div class="video-related-content video-related-content-list"></div>
+  </div>
+{# {% endif %} #}
