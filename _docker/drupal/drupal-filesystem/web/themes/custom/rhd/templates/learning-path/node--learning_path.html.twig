@@ -74,7 +74,7 @@ other methods (such as node.delete) will result in an exception.
       {{ title_prefix }}
         <h2>{{ label }}</h2>
       {{ title_suffix }}
-      <div class="" data-count="500" data-max-width="768">
+      <div class="show-more-text auto-open" data-count="500" data-max-width="768">
         {{ content.field_long_description }}
         <h6>{{ content.field_requirements_an_or_pre_req['#title'] }}</h6>
         {{ content.field_requirements_an_or_pre_req }}
@@ -84,6 +84,10 @@ other methods (such as node.delete) will result in an exception.
           {{content.field_related_red_hat_certificat}}
         </div>
       </div>
+      <a class="show-more" onclick="return false;">
+          <span class="more">Show More</span>
+          <span class="less">Show Less</span>
+      </a>
     </div>
   </div>
   {% if content.field_learning_path_content_item|render|striptags|trim is not empty %}

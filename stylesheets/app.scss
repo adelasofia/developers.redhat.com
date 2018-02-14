@@ -2471,7 +2471,8 @@ a#scroll-to-top {
 .show-more-text {
   overflow: hidden; 
   max-height: 75px;
-  &.open { max-height: 100% !important; }
+  &.open,
+  &.auto-open { max-height: 100% !important; }
 }
 .show-more{
   text-align: center;
