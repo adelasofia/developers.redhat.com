@@ -1,4 +1,37 @@
+.rh-universal-footer {
+    background-color: #1A1A1A;
+    flex: 0 0 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #5e6a71;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    .rh-footer-logo, .rh-summit-footer-logo {
+        flex: 0 0 300px;
+    }
+
+    .contentinfo {
+        flex: 1 1 auto;
+    }
+}
+
+.rhd-footer {
+    background-color: $dark-gray;
+    color: $white;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: row;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
 .rhd-footer-nav {
+  flex: 1 1 auto;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-column-start: 3;
@@ -49,6 +82,8 @@
 }
 
 .rhd-footer-sidebar {
+  background-color: $red;
+  flex: 0 0 33%;
   grid-column-start: 8;
   grid-column-end: 11;
   padding: 20px 30px 30px 30px;
@@ -195,6 +230,11 @@
 }
 
 @media screen and (max-width: 480px) {
+  .rhd-footer-nav,
+  .rhd-footer-sidebar {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
   .rh-universal-footer-legal > li {
     display: block;
     &:after {
